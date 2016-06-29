@@ -11,28 +11,5 @@
     android:id="@+id/backgroundID">
 
 
-    <Button
-        android:id="@+id/btn_view_today"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View today's steps"/>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/txt_message"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="START!"/>
-
-
-
-
 
 </LinearLayout>

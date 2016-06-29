@@ -27,4 +27,5 @@ dependencies {
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
     compile files('libs/javax.mail.jar')
     compile files('libs/activation.jar')
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
 }

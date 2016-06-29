@@ -9454,8 +9454,29 @@
                     "startLine": 1492,
                     "startColumn": 4,
                     "startOffset": 117383,
+                    "endLine": 1499,
+                    "endColumn": 8,
+                    "endOffset": 117827
+                },
+                "from": {
+                    "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 384,
+                        "endLine": 17,
+                        "endColumn": 8,
+                        "endOffset": 835
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1500,
+                    "startColumn": 4,
+                    "startOffset": 117832,
                     "endColumn": 79,
-                    "endOffset": 117458
+                    "endOffset": 117907
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9470,11 +9491,11 @@
             },
             {
                 "to": {
-                    "startLine": 1493,
+                    "startLine": 1501,
                     "startColumn": 4,
-                    "startOffset": 117463,
+                    "startOffset": 117912,
                     "endColumn": 99,
-                    "endOffset": 117558
+                    "endOffset": 118007
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9489,11 +9510,11 @@
             },
             {
                 "to": {
-                    "startLine": 1494,
+                    "startLine": 1502,
                     "startColumn": 4,
-                    "startOffset": 117563,
+                    "startOffset": 118012,
                     "endColumn": 89,
-                    "endOffset": 117648
+                    "endOffset": 118097
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9508,11 +9529,11 @@
             },
             {
                 "to": {
-                    "startLine": 1495,
+                    "startLine": 1503,
                     "startColumn": 4,
-                    "startOffset": 117653,
+                    "startOffset": 118102,
                     "endColumn": 109,
-                    "endOffset": 117758
+                    "endOffset": 118207
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9527,11 +9548,11 @@
             },
             {
                 "to": {
-                    "startLine": 1496,
+                    "startLine": 1504,
                     "startColumn": 4,
-                    "startOffset": 117763,
+                    "startOffset": 118212,
                     "endColumn": 91,
-                    "endOffset": 117850
+                    "endOffset": 118299
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9546,12 +9567,12 @@
             },
             {
                 "to": {
-                    "startLine": 1497,
+                    "startLine": 1505,
                     "startColumn": 4,
-                    "startOffset": 117855,
-                    "endLine": 1498,
+                    "startOffset": 118304,
+                    "endLine": 1506,
                     "endColumn": 12,
-                    "endOffset": 117950
+                    "endOffset": 118399
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9567,12 +9588,12 @@
             },
             {
                 "to": {
-                    "startLine": 1499,
+                    "startLine": 1507,
                     "startColumn": 4,
-                    "startOffset": 117955,
-                    "endLine": 1500,
+                    "startOffset": 118404,
+                    "endLine": 1508,
                     "endColumn": 12,
-                    "endOffset": 118062
+                    "endOffset": 118511
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9588,12 +9609,12 @@
             },
             {
                 "to": {
-                    "startLine": 1501,
+                    "startLine": 1509,
                     "startColumn": 4,
-                    "startOffset": 118067,
-                    "endLine": 1502,
+                    "startOffset": 118516,
+                    "endLine": 1510,
                     "endColumn": 12,
-                    "endOffset": 118176
+                    "endOffset": 118625
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9609,12 +9630,12 @@
             },
             {
                 "to": {
-                    "startLine": 1503,
+                    "startLine": 1511,
                     "startColumn": 4,
-                    "startOffset": 118181,
-                    "endLine": 1504,
+                    "startOffset": 118630,
+                    "endLine": 1512,
                     "endColumn": 12,
-                    "endOffset": 118292
+                    "endOffset": 118741
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9630,12 +9651,12 @@
             },
             {
                 "to": {
-                    "startLine": 1505,
+                    "startLine": 1513,
                     "startColumn": 4,
-                    "startOffset": 118297,
-                    "endLine": 1506,
+                    "startOffset": 118746,
+                    "endLine": 1514,
                     "endColumn": 12,
-                    "endOffset": 118408
+                    "endOffset": 118857
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9651,11 +9672,11 @@
             },
             {
                 "to": {
-                    "startLine": 1507,
+                    "startLine": 1515,
                     "startColumn": 4,
-                    "startOffset": 118413,
+                    "startOffset": 118862,
                     "endColumn": 93,
-                    "endOffset": 118502
+                    "endOffset": 118951
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9670,11 +9691,11 @@
             },
             {
                 "to": {
-                    "startLine": 1508,
+                    "startLine": 1516,
                     "startColumn": 4,
-                    "startOffset": 118507,
+                    "startOffset": 118956,
                     "endColumn": 113,
-                    "endOffset": 118616
+                    "endOffset": 119065
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9689,11 +9710,11 @@
             },
             {
                 "to": {
-                    "startLine": 1509,
+                    "startLine": 1517,
                     "startColumn": 4,
-                    "startOffset": 118621,
+                    "startOffset": 119070,
                     "endColumn": 111,
-                    "endOffset": 118728
+                    "endOffset": 119177
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9708,12 +9729,12 @@
             },
             {
                 "to": {
-                    "startLine": 1510,
+                    "startLine": 1518,
                     "startColumn": 4,
-                    "startOffset": 118733,
-                    "endLine": 1511,
+                    "startOffset": 119182,
+                    "endLine": 1519,
                     "endColumn": 12,
-                    "endOffset": 118830
+                    "endOffset": 119279
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9729,12 +9750,12 @@
             },
             {
                 "to": {
-                    "startLine": 1512,
+                    "startLine": 1520,
                     "startColumn": 4,
-                    "startOffset": 118835,
-                    "endLine": 1513,
+                    "startOffset": 119284,
+                    "endLine": 1521,
                     "endColumn": 12,
-                    "endOffset": 118950
+                    "endOffset": 119399
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9750,12 +9771,12 @@
             },
             {
                 "to": {
-                    "startLine": 1514,
+                    "startLine": 1522,
                     "startColumn": 4,
-                    "startOffset": 118955,
-                    "endLine": 1515,
+                    "startOffset": 119404,
+                    "endLine": 1523,
                     "endColumn": 12,
-                    "endOffset": 119072
+                    "endOffset": 119521
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9771,11 +9792,11 @@
             },
             {
                 "to": {
-                    "startLine": 1516,
+                    "startLine": 1524,
                     "startColumn": 4,
-                    "startOffset": 119077,
+                    "startOffset": 119526,
                     "endColumn": 81,
-                    "endOffset": 119154
+                    "endOffset": 119603
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9790,11 +9811,11 @@
             },
             {
                 "to": {
-                    "startLine": 1517,
+                    "startLine": 1525,
                     "startColumn": 4,
-                    "startOffset": 119159,
+                    "startOffset": 119608,
                     "endColumn": 103,
-                    "endOffset": 119258
+                    "endOffset": 119707
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9809,11 +9830,11 @@
             },
             {
                 "to": {
-                    "startLine": 1518,
+                    "startLine": 1526,
                     "startColumn": 4,
-                    "startOffset": 119263,
+                    "startOffset": 119712,
                     "endColumn": 119,
-                    "endOffset": 119378
+                    "endOffset": 119827
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9828,11 +9849,11 @@
             },
             {
                 "to": {
-                    "startLine": 1519,
+                    "startLine": 1527,
                     "startColumn": 4,
-                    "startOffset": 119383,
+                    "startOffset": 119832,
                     "endColumn": 125,
-                    "endOffset": 119504
+                    "endOffset": 119953
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9847,11 +9868,11 @@
             },
             {
                 "to": {
-                    "startLine": 1520,
+                    "startLine": 1528,
                     "startColumn": 4,
-                    "startOffset": 119509,
+                    "startOffset": 119958,
                     "endColumn": 97,
-                    "endOffset": 119602
+                    "endOffset": 120051
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9866,11 +9887,11 @@
             },
             {
                 "to": {
-                    "startLine": 1521,
+                    "startLine": 1529,
                     "startColumn": 4,
-                    "startOffset": 119607,
+                    "startOffset": 120056,
                     "endColumn": 93,
-                    "endOffset": 119696
+                    "endOffset": 120145
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9885,11 +9906,11 @@
             },
             {
                 "to": {
-                    "startLine": 1522,
+                    "startLine": 1530,
                     "startColumn": 4,
-                    "startOffset": 119701,
+                    "startOffset": 120150,
                     "endColumn": 87,
-                    "endOffset": 119784
+                    "endOffset": 120233
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9904,11 +9925,11 @@
             },
             {
                 "to": {
-                    "startLine": 1523,
+                    "startLine": 1531,
                     "startColumn": 4,
-                    "startOffset": 119789,
+                    "startOffset": 120238,
                     "endColumn": 111,
-                    "endOffset": 119896
+                    "endOffset": 120345
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9923,11 +9944,11 @@
             },
             {
                 "to": {
-                    "startLine": 1524,
+                    "startLine": 1532,
                     "startColumn": 4,
-                    "startOffset": 119901,
+                    "startOffset": 120350,
                     "endColumn": 115,
-                    "endOffset": 120012
+                    "endOffset": 120461
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9942,11 +9963,11 @@
             },
             {
                 "to": {
-                    "startLine": 1525,
+                    "startLine": 1533,
                     "startColumn": 4,
-                    "startOffset": 120017,
+                    "startOffset": 120466,
                     "endColumn": 121,
-                    "endOffset": 120134
+                    "endOffset": 120583
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9961,11 +9982,11 @@
             },
             {
                 "to": {
-                    "startLine": 1526,
+                    "startLine": 1534,
                     "startColumn": 4,
-                    "startOffset": 120139,
+                    "startOffset": 120588,
                     "endColumn": 111,
-                    "endOffset": 120246
+                    "endOffset": 120695
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -9980,12 +10001,12 @@
             },
             {
                 "to": {
-                    "startLine": 1527,
+                    "startLine": 1535,
                     "startColumn": 4,
-                    "startOffset": 120251,
-                    "endLine": 1529,
+                    "startOffset": 120700,
+                    "endLine": 1537,
                     "endColumn": 12,
-                    "endOffset": 120421
+                    "endOffset": 120870
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10001,11 +10022,11 @@
             },
             {
                 "to": {
-                    "startLine": 1530,
+                    "startLine": 1538,
                     "startColumn": 4,
-                    "startOffset": 120426,
+                    "startOffset": 120875,
                     "endColumn": 115,
-                    "endOffset": 120537
+                    "endOffset": 120986
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10020,11 +10041,11 @@
             },
             {
                 "to": {
-                    "startLine": 1531,
+                    "startLine": 1539,
                     "startColumn": 4,
-                    "startOffset": 120542,
+                    "startOffset": 120991,
                     "endColumn": 85,
-                    "endOffset": 120623
+                    "endOffset": 121072
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10039,11 +10060,11 @@
             },
             {
                 "to": {
-                    "startLine": 1532,
+                    "startLine": 1540,
                     "startColumn": 4,
-                    "startOffset": 120628,
+                    "startOffset": 121077,
                     "endColumn": 91,
-                    "endOffset": 120715
+                    "endOffset": 121164
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10058,12 +10079,12 @@
             },
             {
                 "to": {
-                    "startLine": 1533,
+                    "startLine": 1541,
                     "startColumn": 4,
-                    "startOffset": 120720,
-                    "endLine": 1534,
+                    "startOffset": 121169,
+                    "endLine": 1542,
                     "endColumn": 12,
-                    "endOffset": 120827
+                    "endOffset": 121276
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10079,12 +10100,12 @@
             },
             {
                 "to": {
-                    "startLine": 1535,
+                    "startLine": 1543,
                     "startColumn": 4,
-                    "startOffset": 120832,
-                    "endLine": 1536,
+                    "startOffset": 121281,
+                    "endLine": 1544,
                     "endColumn": 12,
-                    "endOffset": 120951
+                    "endOffset": 121400
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10100,11 +10121,11 @@
             },
             {
                 "to": {
-                    "startLine": 1537,
+                    "startLine": 1545,
                     "startColumn": 4,
-                    "startOffset": 120956,
+                    "startOffset": 121405,
                     "endColumn": 66,
-                    "endOffset": 121018
+                    "endOffset": 121467
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10119,12 +10140,12 @@
             },
             {
                 "to": {
-                    "startLine": 1538,
+                    "startLine": 1546,
                     "startColumn": 4,
-                    "startOffset": 121023,
-                    "endLine": 1539,
+                    "startOffset": 121472,
+                    "endLine": 1547,
                     "endColumn": 12,
-                    "endOffset": 121144
+                    "endOffset": 121593
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10140,11 +10161,11 @@
             },
             {
                 "to": {
-                    "startLine": 1540,
+                    "startLine": 1548,
                     "startColumn": 4,
-                    "startOffset": 121149,
+                    "startOffset": 121598,
                     "endColumn": 67,
-                    "endOffset": 121212
+                    "endOffset": 121661
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10159,12 +10180,12 @@
             },
             {
                 "to": {
-                    "startLine": 1541,
+                    "startLine": 1549,
                     "startColumn": 4,
-                    "startOffset": 121217,
-                    "endLine": 1542,
+                    "startOffset": 121666,
+                    "endLine": 1550,
                     "endColumn": 12,
-                    "endOffset": 121340
+                    "endOffset": 121789
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10180,12 +10201,12 @@
             },
             {
                 "to": {
-                    "startLine": 1543,
+                    "startLine": 1551,
                     "startColumn": 4,
-                    "startOffset": 121345,
-                    "endLine": 1544,
+                    "startOffset": 121794,
+                    "endLine": 1552,
                     "endColumn": 12,
-                    "endOffset": 121484
+                    "endOffset": 121933
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10201,12 +10222,12 @@
             },
             {
                 "to": {
-                    "startLine": 1545,
+                    "startLine": 1553,
                     "startColumn": 4,
-                    "startOffset": 121489,
-                    "endLine": 1546,
+                    "startOffset": 121938,
+                    "endLine": 1554,
                     "endColumn": 12,
-                    "endOffset": 121612
+                    "endOffset": 122061
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10222,11 +10243,11 @@
             },
             {
                 "to": {
-                    "startLine": 1547,
+                    "startLine": 1555,
                     "startColumn": 4,
-                    "startOffset": 121617,
+                    "startOffset": 122066,
                     "endColumn": 68,
-                    "endOffset": 121681
+                    "endOffset": 122130
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10241,11 +10262,11 @@
             },
             {
                 "to": {
-                    "startLine": 1548,
+                    "startLine": 1556,
                     "startColumn": 4,
-                    "startOffset": 121686,
+                    "startOffset": 122135,
                     "endColumn": 94,
-                    "endOffset": 121776
+                    "endOffset": 122225
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10260,11 +10281,11 @@
             },
             {
                 "to": {
-                    "startLine": 1549,
+                    "startLine": 1557,
                     "startColumn": 4,
-                    "startOffset": 121781,
+                    "startOffset": 122230,
                     "endColumn": 114,
-                    "endOffset": 121891
+                    "endOffset": 122340
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10279,11 +10300,11 @@
             },
             {
                 "to": {
-                    "startLine": 1550,
+                    "startLine": 1558,
                     "startColumn": 4,
-                    "startOffset": 121896,
+                    "startOffset": 122345,
                     "endColumn": 112,
-                    "endOffset": 122004
+                    "endOffset": 122453
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10298,11 +10319,11 @@
             },
             {
                 "to": {
-                    "startLine": 1551,
+                    "startLine": 1559,
                     "startColumn": 4,
-                    "startOffset": 122009,
+                    "startOffset": 122458,
                     "endColumn": 98,
-                    "endOffset": 122103
+                    "endOffset": 122552
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10317,11 +10338,11 @@
             },
             {
                 "to": {
-                    "startLine": 1552,
+                    "startLine": 1560,
                     "startColumn": 4,
-                    "startOffset": 122108,
+                    "startOffset": 122557,
                     "endColumn": 108,
-                    "endOffset": 122212
+                    "endOffset": 122661
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10336,11 +10357,11 @@
             },
             {
                 "to": {
-                    "startLine": 1553,
+                    "startLine": 1561,
                     "startColumn": 4,
-                    "startOffset": 122217,
+                    "startOffset": 122666,
                     "endColumn": 110,
-                    "endOffset": 122323
+                    "endOffset": 122772
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10355,11 +10376,11 @@
             },
             {
                 "to": {
-                    "startLine": 1554,
+                    "startLine": 1562,
                     "startColumn": 4,
-                    "startOffset": 122328,
+                    "startOffset": 122777,
                     "endColumn": 110,
-                    "endOffset": 122434
+                    "endOffset": 122883
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10374,11 +10395,11 @@
             },
             {
                 "to": {
-                    "startLine": 1555,
+                    "startLine": 1563,
                     "startColumn": 4,
-                    "startOffset": 122439,
+                    "startOffset": 122888,
                     "endColumn": 100,
-                    "endOffset": 122535
+                    "endOffset": 122984
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10393,11 +10414,11 @@
             },
             {
                 "to": {
-                    "startLine": 1556,
+                    "startLine": 1564,
                     "startColumn": 4,
-                    "startOffset": 122540,
+                    "startOffset": 122989,
                     "endColumn": 104,
-                    "endOffset": 122640
+                    "endOffset": 123089
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10412,12 +10433,12 @@
             },
             {
                 "to": {
-                    "startLine": 1557,
+                    "startLine": 1565,
                     "startColumn": 4,
-                    "startOffset": 122645,
-                    "endLine": 1558,
+                    "startOffset": 123094,
+                    "endLine": 1566,
                     "endColumn": 12,
-                    "endOffset": 122752
+                    "endOffset": 123201
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10433,12 +10454,12 @@
             },
             {
                 "to": {
-                    "startLine": 1559,
+                    "startLine": 1567,
                     "startColumn": 4,
-                    "startOffset": 122757,
-                    "endLine": 1560,
+                    "startOffset": 123206,
+                    "endLine": 1568,
                     "endColumn": 12,
-                    "endOffset": 122882
+                    "endOffset": 123331
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10454,11 +10475,11 @@
             },
             {
                 "to": {
-                    "startLine": 1561,
+                    "startLine": 1569,
                     "startColumn": 4,
-                    "startOffset": 122887,
+                    "startOffset": 123336,
                     "endColumn": 90,
-                    "endOffset": 122973
+                    "endOffset": 123422
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10473,11 +10494,11 @@
             },
             {
                 "to": {
-                    "startLine": 1562,
+                    "startLine": 1570,
                     "startColumn": 4,
-                    "startOffset": 122978,
+                    "startOffset": 123427,
                     "endColumn": 122,
-                    "endOffset": 123096
+                    "endOffset": 123545
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10492,12 +10513,12 @@
             },
             {
                 "to": {
-                    "startLine": 1563,
+                    "startLine": 1571,
                     "startColumn": 4,
-                    "startOffset": 123101,
-                    "endLine": 1564,
+                    "startOffset": 123550,
+                    "endLine": 1572,
                     "endColumn": 12,
-                    "endOffset": 123208
+                    "endOffset": 123657
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10513,11 +10534,11 @@
             },
             {
                 "to": {
-                    "startLine": 1565,
+                    "startLine": 1573,
                     "startColumn": 4,
-                    "startOffset": 123213,
+                    "startOffset": 123662,
                     "endColumn": 85,
-                    "endOffset": 123294
+                    "endOffset": 123743
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10532,11 +10553,11 @@
             },
             {
                 "to": {
-                    "startLine": 1566,
+                    "startLine": 1574,
                     "startColumn": 4,
-                    "startOffset": 123299,
+                    "startOffset": 123748,
                     "endColumn": 103,
-                    "endOffset": 123398
+                    "endOffset": 123847
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10551,12 +10572,12 @@
             },
             {
                 "to": {
-                    "startLine": 1567,
+                    "startLine": 1575,
                     "startColumn": 4,
-                    "startOffset": 123403,
-                    "endLine": 1568,
+                    "startOffset": 123852,
+                    "endLine": 1576,
                     "endColumn": 12,
-                    "endOffset": 123506
+                    "endOffset": 123955
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10572,12 +10593,12 @@
             },
             {
                 "to": {
-                    "startLine": 1569,
+                    "startLine": 1577,
                     "startColumn": 4,
-                    "startOffset": 123511,
-                    "endLine": 1570,
+                    "startOffset": 123960,
+                    "endLine": 1578,
                     "endColumn": 12,
-                    "endOffset": 123606
+                    "endOffset": 124055
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10593,12 +10614,12 @@
             },
             {
                 "to": {
-                    "startLine": 1571,
+                    "startLine": 1579,
                     "startColumn": 4,
-                    "startOffset": 123611,
-                    "endLine": 1572,
+                    "startOffset": 124060,
+                    "endLine": 1580,
                     "endColumn": 12,
-                    "endOffset": 123724
+                    "endOffset": 124173
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10614,12 +10635,12 @@
             },
             {
                 "to": {
-                    "startLine": 1573,
+                    "startLine": 1581,
                     "startColumn": 4,
-                    "startOffset": 123729,
-                    "endLine": 1574,
+                    "startOffset": 124178,
+                    "endLine": 1582,
                     "endColumn": 12,
-                    "endOffset": 123828
+                    "endOffset": 124277
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10635,12 +10656,12 @@
             },
             {
                 "to": {
-                    "startLine": 1575,
+                    "startLine": 1583,
                     "startColumn": 4,
-                    "startOffset": 123833,
-                    "endLine": 1576,
+                    "startOffset": 124282,
+                    "endLine": 1584,
                     "endColumn": 12,
-                    "endOffset": 123932
+                    "endOffset": 124381
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10656,12 +10677,12 @@
             },
             {
                 "to": {
-                    "startLine": 1577,
+                    "startLine": 1585,
                     "startColumn": 4,
-                    "startOffset": 123937,
-                    "endLine": 1578,
+                    "startOffset": 124386,
+                    "endLine": 1586,
                     "endColumn": 12,
-                    "endOffset": 124058
+                    "endOffset": 124507
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10677,11 +10698,11 @@
             },
             {
                 "to": {
-                    "startLine": 1579,
+                    "startLine": 1587,
                     "startColumn": 4,
-                    "startOffset": 124063,
+                    "startOffset": 124512,
                     "endColumn": 87,
-                    "endOffset": 124146
+                    "endOffset": 124595
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10696,11 +10717,11 @@
             },
             {
                 "to": {
-                    "startLine": 1580,
+                    "startLine": 1588,
                     "startColumn": 4,
-                    "startOffset": 124151,
+                    "startOffset": 124600,
                     "endColumn": 107,
-                    "endOffset": 124254
+                    "endOffset": 124703
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10715,11 +10736,11 @@
             },
             {
                 "to": {
-                    "startLine": 1581,
+                    "startLine": 1589,
                     "startColumn": 4,
-                    "startOffset": 124259,
+                    "startOffset": 124708,
                     "endColumn": 99,
-                    "endOffset": 124354
+                    "endOffset": 124803
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10734,11 +10755,11 @@
             },
             {
                 "to": {
-                    "startLine": 1582,
+                    "startLine": 1590,
                     "startColumn": 4,
-                    "startOffset": 124359,
+                    "startOffset": 124808,
                     "endColumn": 89,
-                    "endOffset": 124444
+                    "endOffset": 124893
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10753,11 +10774,11 @@
             },
             {
                 "to": {
-                    "startLine": 1583,
+                    "startLine": 1591,
                     "startColumn": 4,
-                    "startOffset": 124449,
+                    "startOffset": 124898,
                     "endColumn": 109,
-                    "endOffset": 124554
+                    "endOffset": 125003
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10772,11 +10793,11 @@
             },
             {
                 "to": {
-                    "startLine": 1584,
+                    "startLine": 1592,
                     "startColumn": 4,
-                    "startOffset": 124559,
+                    "startOffset": 125008,
                     "endColumn": 83,
-                    "endOffset": 124638
+                    "endOffset": 125087
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10791,11 +10812,11 @@
             },
             {
                 "to": {
-                    "startLine": 1585,
+                    "startLine": 1593,
                     "startColumn": 4,
-                    "startOffset": 124643,
+                    "startOffset": 125092,
                     "endColumn": 83,
-                    "endOffset": 124722
+                    "endOffset": 125171
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10810,11 +10831,11 @@
             },
             {
                 "to": {
-                    "startLine": 1586,
+                    "startLine": 1594,
                     "startColumn": 4,
-                    "startOffset": 124727,
+                    "startOffset": 125176,
                     "endColumn": 53,
-                    "endOffset": 124776
+                    "endOffset": 125225
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10829,11 +10850,11 @@
             },
             {
                 "to": {
-                    "startLine": 1587,
+                    "startLine": 1595,
                     "startColumn": 4,
-                    "startOffset": 124781,
+                    "startOffset": 125230,
                     "endColumn": 63,
-                    "endOffset": 124840
+                    "endOffset": 125289
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10848,11 +10869,11 @@
             },
             {
                 "to": {
-                    "startLine": 1588,
+                    "startLine": 1596,
                     "startColumn": 4,
-                    "startOffset": 124845,
+                    "startOffset": 125294,
                     "endColumn": 105,
-                    "endOffset": 124946
+                    "endOffset": 125395
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10867,11 +10888,11 @@
             },
             {
                 "to": {
-                    "startLine": 1589,
+                    "startLine": 1597,
                     "startColumn": 4,
-                    "startOffset": 124951,
+                    "startOffset": 125400,
                     "endColumn": 109,
-                    "endOffset": 125056
+                    "endOffset": 125505
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10886,11 +10907,11 @@
             },
             {
                 "to": {
-                    "startLine": 1590,
+                    "startLine": 1598,
                     "startColumn": 4,
-                    "startOffset": 125061,
+                    "startOffset": 125510,
                     "endColumn": 83,
-                    "endOffset": 125140
+                    "endOffset": 125589
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",
@@ -10905,11 +10926,11 @@
             },
             {
                 "to": {
-                    "startLine": 1591,
+                    "startLine": 1599,
                     "startColumn": 4,
-                    "startOffset": 125145,
+                    "startOffset": 125594,
                     "endColumn": 119,
-                    "endOffset": 125260
+                    "endOffset": 125709
                 },
                 "from": {
                     "file": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\values\\values.xml",

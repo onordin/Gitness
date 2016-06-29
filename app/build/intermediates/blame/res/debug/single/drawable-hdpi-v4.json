@@ -236,12 +236,12 @@
         "source": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_full_open_on_phone.png"
     },
     {
-        "merged": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
-    },
-    {
         "merged": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
         "source": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-hdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "H:\\ProfileData\\AndroidStudioProjects\\GoogleFitness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",

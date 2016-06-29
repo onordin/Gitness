@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:2:1-42:12
 	xmlns:android
 		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -18,8 +18,12 @@ ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\Andro
 MERGED from [com.google.android.gms:play-services-maps:8.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:21:5-66
 	android:name
 		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:6:22-78
 application
-ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:7:5-31:19
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:8:5-40:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -40,47 +44,59 @@ MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] H:\ProfileD
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:23.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:11:9-41
 	android:allowBackup
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:9:9-35
 	android:icon
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:10:9-43
 	android:theme
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:13:9-49
 activity#com.example.googlefitness.MainActivity
-ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:13:9-18:20
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:15:9-20:20
+	android:theme
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:15:48-88
 	android:name
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:13:19-47
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:15:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:14:13-17:29
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:16:13-19:29
 action#android.intent.action.MAIN
-ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:18:27-74
 meta-data#com.google.android.gms.version
-ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:25:9-27:69
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:28:9-30:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 	android:name
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:26:13-58
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:29:13-58
 	android:value
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:27:13-66
-receiver#com.example.googlefitness.AlarmReceiver
-ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:28:9-60
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:30:13-66
+service#com.example.googlefitness.MyService
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:32:9-46
 	android:name
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:28:19-48
-service#com.example.googlefitness.BackgroundService
-ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:29:9-54
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:32:18-43
+service#com.example.googlefitness.SecondService
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:33:9-50
 	android:name
-		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:29:18-51
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:33:18-47
+receiver#com.example.googlefitness.AutoStart
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:35:9-39:20
+	android:name
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:35:19-44
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:36:13-38:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:37:17-79
+	android:name
+		ADDED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml:37:25-76
 uses-sdk
 INJECTED from H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78

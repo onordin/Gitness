@@ -4,22 +4,30 @@
     api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="18950238945014"
+    timestamp="28224404183050"
     token="-3941578181276127508" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="6241" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="1049" />
     <task
         name="verifier"
-        duration="0" />
+        duration="138" />
 
-    <build timestamp="18950238945014" />
+    <artifact
+        location="H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="28224404183050" >
+        <artifact
+            location="H:\ProfileData\AndroidStudioProjects\GoogleFitness\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
 
 </instant-run>
