@@ -30,7 +30,6 @@
             android:value="@integer/google_play_services_version" />
 
         <service android:name=".MyService" />
-        <service android:name=".SecondService" />
 
         <receiver android:name=".AutoStart">
             <intent-filter>

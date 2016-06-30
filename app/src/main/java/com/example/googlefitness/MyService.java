@@ -28,7 +28,6 @@ import java.util.logging.Handler;
 public class MyService extends Service {
 
     private String steps="";
-    private GoogleApiClient googleApiClient;
     private ArrayList<String> dataPointList;
 
     @Nullable
@@ -46,18 +45,17 @@ public class MyService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        initArray();
-        sendJSON();
-        Log.i("Service", "I denna metoden kan något riktigt gött hända... och om 30 sekunder dyker texten upp igen.");
+        //initArray();
+        //sendJSON();
+        Log.i("Service", "onStartCommand");
 
-        //new StartServiceTask().execute();
+        new StartServiceTask().execute();
         stopSelf();
         return super.onStartCommand(intent, flags, startId);
     }
 
     @Override
     public void onDestroy() {
-        //super.onDestroy();
         Log.i("Service", "Service is stopped");
         AlarmManager alarm = (AlarmManager)getSystemService(ALARM_SERVICE);
         alarm.set(
@@ -77,37 +75,33 @@ public class MyService extends Service {
         super.onDestroy();
     }
 
-
     private void initArray() {
-        dataPointList.add("Type");
         dataPointList.add("com.google.step_count.delta");
-        dataPointList.add("Date");
         dataPointList.add("28 Jun 2016");
-        dataPointList.add("Field");
         dataPointList.add("steps");
-        dataPointList.add("Value");
-        dataPointList.add("978");
+        dataPointList.add("1234");
     }
 
     private class StartServiceTask extends AsyncTask<Void, Void, Void> {
 
         @Override
-        protected void onPreExecute() {        }
+        protected void onPreExecute() {
+        }
 
         protected Void doInBackground(Void... params) {
             Log.i("Service", "doInBackground()");
+            getStepsForToday();
             return null;
         }
         @Override
         protected void onPostExecute(Void result) {
             Log.i("Service", "Nu är vi i onPostExecute");
-            stopSelf();
         }
     }
 
     private void sendJSON() {
         PostHandler postHandler = new PostHandler();
-        String json = postHandler.bowlingJson(dataPointList);
+        String json = postHandler.stepJson(dataPointList);
         String response = null;
         /*
         try {
@@ -115,15 +109,14 @@ public class MyService extends Service {
         } catch (IOException e) {
             e.printStackTrace();
         }*/
-        System.out.println("response: "+response);
         System.out.println("json: " +json);
     }
 
     public void getStepsForToday() {
-        Log.i("GoogleHandler", "Inuti getStepsForToday!!");
-        DailyTotalResult result = Fitness.HistoryApi.readDailyTotal( googleApiClient, DataType.TYPE_STEP_COUNT_DELTA ).await(1, TimeUnit.MINUTES);
+        DailyTotalResult result = Fitness.HistoryApi.readDailyTotal( MainActivity.googleApiClient, DataType.TYPE_STEP_COUNT_DELTA ).await(1, TimeUnit.MINUTES);
         for (DataPoint dp : result.getTotal().getDataPoints()) {
             steps = dp.getValue(Field.FIELD_STEPS).toString();
+            Log.i("Service", "Steps: " +steps);
         }
     }
 
