@@ -3,37 +3,30 @@ package com.example.googlefitness;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.app.Service;
-import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Bundle;
-import android.os.Handler;
 import android.os.IBinder;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
 import android.util.Log;
-import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.Scopes;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.fitness.Fitness;
 import com.google.android.gms.fitness.data.DataPoint;
 import com.google.android.gms.fitness.data.DataType;
 import com.google.android.gms.fitness.data.Field;
 import com.google.android.gms.fitness.result.DailyTotalResult;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 /**
  * Created by oscarn on 2016-06-27.
  */
-public class MyService extends Service {
+public class MyService extends Service implements IAsyncResponse {
 
 
     private ArrayList<String> dataPointList;
@@ -59,9 +52,6 @@ public class MyService extends Service {
         stopSelf();
         return super.onStartCommand(intent, flags, startId);
     }
-
-
-
 
     @Override
     public void onDestroy() {
@@ -91,7 +81,10 @@ public class MyService extends Service {
         dataPointList.add("1234");
     }
 
-
+    @Override
+    public void result(int responseCode, JSONObject json) throws JSONException {
+        Log.d("JSON RESPONSE", String.format("%s: %s", responseCode, json));
+    }
 
     private class StartServiceTask extends AsyncTask<Void, Void, Void> {
 
@@ -106,7 +99,7 @@ public class MyService extends Service {
             MainActivity.googleApiClient.connect();
             steps = getStepsForToday(MainActivity.googleApiClient);
             Log.i("Service", "Steps: " +steps);
-
+            sendJSON(steps);
             return null;
         }
         @Override
@@ -115,19 +108,20 @@ public class MyService extends Service {
         }
     }
 
-    private void sendJSON() {
+    private void sendJSON(String steps) {
         PostHandler postHandler = new PostHandler();
-        String json = postHandler.stepJson(dataPointList);
+        String url = "https://api.stena-health.d4bb62f5.svc.dockerapp.io/healthData?apikeyid=pY_8_iW1HNiZxGvrGLpOZw&secretaccesskey=LJb8siHDrxXzD27p8KCUcw";
+        String json = String.format("[{\"userId\":\"%s\", \"timestamp\": \"%s\", \"steps\":\"%s\", \"team\":\"%s\"}]", "oscar", "2016-07-06", steps, 2);
         String response = null;
-        /*
+        // -k, -d -H
         try {
-            response = postHandler.post("http://www.roundsapp.com/post", json);
+            response = postHandler.post(url, json);
+            Log.d("JSON RESPONSE", String.format("%s: %s", response, json));
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
-        System.out.println("json: " +json);
+            System.out.println("json: " + json);
+        }
     }
-
     public String getStepsForToday(GoogleApiClient googleApiClient) {
         String steps="";
         DailyTotalResult result = Fitness.HistoryApi.readDailyTotal( googleApiClient, DataType.TYPE_STEP_COUNT_DELTA ).await(1, TimeUnit.MINUTES);
@@ -136,6 +130,4 @@ public class MyService extends Service {
         }
         return steps;
     }
-
-
 }
