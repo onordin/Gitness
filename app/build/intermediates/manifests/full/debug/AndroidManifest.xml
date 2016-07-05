@@ -44,7 +44,6 @@
             android:value="@integer/google_play_services_version" />
 
         <service android:name="com.example.googlefitness.MyService" />
-        <service android:name="com.example.googlefitness.SecondService" />
 
         <receiver android:name="com.example.googlefitness.AutoStart" >
             <intent-filter>

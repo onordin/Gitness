@@ -1,6 +1,8 @@
 package com.example.googlefitness;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,7 +26,6 @@ public class MainActivity extends FragmentActivity implements
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
         googleApiClient = new GoogleApiClient.Builder(this)
                 .addApi(Fitness.HISTORY_API)
@@ -32,8 +33,9 @@ public class MainActivity extends FragmentActivity implements
                 .addConnectionCallbacks(this)
                 .enableAutoManage(this, 0, this)
                 .build();
-
+        googleApiClient.disconnect();
         startService(new Intent(this, MyService.class));
+
     }
 
 

@@ -6,12 +6,21 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Bundle;
+import android.os.Handler;
 import android.os.IBinder;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.Scopes;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.fitness.Fitness;
 import com.google.android.gms.fitness.data.DataPoint;
 import com.google.android.gms.fitness.data.DataType;
@@ -20,14 +29,13 @@ import com.google.android.gms.fitness.result.DailyTotalResult;
 
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Handler;
 
 /**
  * Created by oscarn on 2016-06-27.
  */
 public class MyService extends Service {
 
-    private String steps="";
+
     private ArrayList<String> dataPointList;
 
     @Nullable
@@ -47,12 +55,13 @@ public class MyService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         //initArray();
         //sendJSON();
-        Log.i("Service", "onStartCommand");
-
         new StartServiceTask().execute();
         stopSelf();
         return super.onStartCommand(intent, flags, startId);
     }
+
+
+
 
     @Override
     public void onDestroy() {
@@ -62,7 +71,7 @@ public class MyService extends Service {
                 // This alarm will wake up the device when System.currentTimeMillis()
                 // equals the second argument value
                 alarm.RTC_WAKEUP,
-                System.currentTimeMillis() + (1000 * 30), // One hour from now
+                System.currentTimeMillis() + (1000 * 15), // One hour from now
                 // PendingIntent.getService creates an Intent that will start a service
                 // when it is called. The first argument is the Context that will be used
                 // when delivering this intent. Using this has worked for me. The second
@@ -82,20 +91,27 @@ public class MyService extends Service {
         dataPointList.add("1234");
     }
 
+
+
     private class StartServiceTask extends AsyncTask<Void, Void, Void> {
+
+        String steps;
 
         @Override
         protected void onPreExecute() {
+
         }
 
         protected Void doInBackground(Void... params) {
-            Log.i("Service", "doInBackground()");
-            getStepsForToday();
+            MainActivity.googleApiClient.connect();
+            steps = getStepsForToday(MainActivity.googleApiClient);
+            Log.i("Service", "Steps: " +steps);
+
             return null;
         }
         @Override
         protected void onPostExecute(Void result) {
-            Log.i("Service", "Nu är vi i onPostExecute");
+            MainActivity.googleApiClient.disconnect();
         }
     }
 
@@ -112,12 +128,13 @@ public class MyService extends Service {
         System.out.println("json: " +json);
     }
 
-    public void getStepsForToday() {
-        DailyTotalResult result = Fitness.HistoryApi.readDailyTotal( MainActivity.googleApiClient, DataType.TYPE_STEP_COUNT_DELTA ).await(1, TimeUnit.MINUTES);
+    public String getStepsForToday(GoogleApiClient googleApiClient) {
+        String steps="";
+        DailyTotalResult result = Fitness.HistoryApi.readDailyTotal( googleApiClient, DataType.TYPE_STEP_COUNT_DELTA ).await(1, TimeUnit.MINUTES);
         for (DataPoint dp : result.getTotal().getDataPoints()) {
             steps = dp.getValue(Field.FIELD_STEPS).toString();
-            Log.i("Service", "Steps: " +steps);
         }
+        return steps;
     }
 
 
