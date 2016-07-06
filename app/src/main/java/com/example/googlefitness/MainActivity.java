@@ -1,5 +1,7 @@
 package com.example.googlefitness;
 
+import android.accounts.Account;
+import android.accounts.AccountManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
@@ -36,9 +38,25 @@ public class MainActivity extends FragmentActivity implements
         googleApiClient.disconnect();
         startService(new Intent(this, MyService.class));
 
+        String accountName = getAccountName();
+        Log.i("MainActivity", "Account name: " +accountName);
+
     }
 
+    private String getAccountName() {
 
+        String accountName = null;
+
+        AccountManager manager = (AccountManager) getSystemService(ACCOUNT_SERVICE);
+        Account[] list = manager.getAccounts();
+        for (Account account : list) {
+            if (account.type.equalsIgnoreCase("com.google")) {
+                accountName = account.name;
+                break;
+            }
+        }
+        return accountName;
+    }
 
     @Override
     public void onConnected(@NonNull Bundle bundle) {

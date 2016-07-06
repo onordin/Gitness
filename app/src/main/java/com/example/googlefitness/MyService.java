@@ -1,5 +1,7 @@
 package com.example.googlefitness;
 
+import android.accounts.Account;
+import android.accounts.AccountManager;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -20,7 +22,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -46,9 +51,10 @@ public class MyService extends Service implements IAsyncResponse {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        //initArray();
-        //sendJSON();
-        new StartServiceTask().execute();
+        Date date = new Date();
+//      if(date.getHours()>19) {
+            new StartServiceTask().execute();
+//      }
         stopSelf();
         return super.onStartCommand(intent, flags, startId);
     }
@@ -74,12 +80,7 @@ public class MyService extends Service implements IAsyncResponse {
         super.onDestroy();
     }
 
-    private void initArray() {
-        dataPointList.add("com.google.step_count.delta");
-        dataPointList.add("28 Jun 2016");
-        dataPointList.add("steps");
-        dataPointList.add("1234");
-    }
+
 
     @Override
     public void result(int responseCode, JSONObject json) throws JSONException {
@@ -87,19 +88,20 @@ public class MyService extends Service implements IAsyncResponse {
     }
 
     private class StartServiceTask extends AsyncTask<Void, Void, Void> {
-
-        String steps;
-
         @Override
-        protected void onPreExecute() {
-
-        }
-
+        protected void onPreExecute() {        }
         protected Void doInBackground(Void... params) {
+
             MainActivity.googleApiClient.connect();
-            steps = getStepsForToday(MainActivity.googleApiClient);
+
+            String accountName = getAccountName();
+            String timestamp = getTimestamp();
+            String steps = getStepsForToday(MainActivity.googleApiClient);
+            Log.i("Service", "Account name: " +accountName);
+            Log.i("Service", "Timestamp: " +timestamp);
             Log.i("Service", "Steps: " +steps);
-            sendJSON(steps);
+
+            sendJSON(accountName, timestamp, steps);
             return null;
         }
         @Override
@@ -108,10 +110,10 @@ public class MyService extends Service implements IAsyncResponse {
         }
     }
 
-    private void sendJSON(String steps) {
+    private void sendJSON(String accountName, String timestamp, String steps) {
         PostHandler postHandler = new PostHandler();
         String url = "https://api.stena-health.d4bb62f5.svc.dockerapp.io/healthData?apikeyid=pY_8_iW1HNiZxGvrGLpOZw&secretaccesskey=LJb8siHDrxXzD27p8KCUcw";
-        String json = String.format("[{\"userId\":\"%s\", \"timestamp\": \"%s\", \"steps\":\"%s\", \"team\":\"%s\"}]", "oscar", "2016-07-06", steps, 2);
+        String json = String.format("[{\"userId\":\"%s\", \"timestamp\": \"%s\", \"steps\":\"%s\", \"team\":\"%s\"}]", accountName, timestamp, steps, 2);
         String response = null;
         // -k, -d -H
         try {
@@ -124,10 +126,29 @@ public class MyService extends Service implements IAsyncResponse {
     }
     public String getStepsForToday(GoogleApiClient googleApiClient) {
         String steps="";
-        DailyTotalResult result = Fitness.HistoryApi.readDailyTotal( googleApiClient, DataType.TYPE_STEP_COUNT_DELTA ).await(1, TimeUnit.MINUTES);
-        for (DataPoint dp : result.getTotal().getDataPoints()) {
+        DailyTotalResult stepResult = Fitness.HistoryApi.readDailyTotal( googleApiClient, DataType.TYPE_STEP_COUNT_DELTA ).await(1, TimeUnit.MINUTES);
+        for (DataPoint dp : stepResult.getTotal().getDataPoints()) {
             steps = dp.getValue(Field.FIELD_STEPS).toString();
         }
         return steps;
+    }
+
+    private String getAccountName() {
+        String accountName = null;
+        AccountManager manager = (AccountManager) getSystemService(ACCOUNT_SERVICE);
+        Account[] list = manager.getAccounts();
+        for (Account account : list) {
+            if (account.type.equalsIgnoreCase("com.google")) {
+                accountName = account.name;
+                break;
+            }
+        }
+        return accountName;
+    }
+
+    private String getTimestamp() {
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        return sdf.format(date).toString();
     }
 }
