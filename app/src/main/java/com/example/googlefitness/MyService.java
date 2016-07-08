@@ -13,10 +13,16 @@ import android.util.Log;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.fitness.Fitness;
+import com.google.android.gms.fitness.data.Bucket;
 import com.google.android.gms.fitness.data.DataPoint;
+import com.google.android.gms.fitness.data.DataSet;
+import com.google.android.gms.fitness.data.DataSource;
 import com.google.android.gms.fitness.data.DataType;
 import com.google.android.gms.fitness.data.Field;
+import com.google.android.gms.fitness.request.DailyTotalRequest;
+import com.google.android.gms.fitness.request.DataReadRequest;
 import com.google.android.gms.fitness.result.DailyTotalResult;
+import com.google.android.gms.fitness.result.DataReadResult;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,7 +32,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.text.DateFormat;
 
 /**
  * Created by oscarn on 2016-06-27.
@@ -34,7 +42,7 @@ import java.util.concurrent.TimeUnit;
 public class MyService extends Service implements IAsyncResponse {
 
 
-    private ArrayList<String> dataPointList;
+    private ArrayList<DailyStepModel> historyStepList;
 
     @Nullable
     @Override
@@ -46,7 +54,7 @@ public class MyService extends Service implements IAsyncResponse {
     public void onCreate() {
         super.onCreate();
         Log.i("Service", "Service is created");
-        dataPointList = new ArrayList<String>();
+        historyStepList = new ArrayList<DailyStepModel>();
     }
 
     @Override
@@ -80,8 +88,6 @@ public class MyService extends Service implements IAsyncResponse {
         super.onDestroy();
     }
 
-
-
     @Override
     public void result(int responseCode, JSONObject json) throws JSONException {
         Log.d("JSON RESPONSE", String.format("%s: %s", responseCode, json));
@@ -91,17 +97,21 @@ public class MyService extends Service implements IAsyncResponse {
         @Override
         protected void onPreExecute() {        }
         protected Void doInBackground(Void... params) {
-
             MainActivity.googleApiClient.connect();
-
+        /*
             String accountName = getAccountName();
             String timestamp = getTimestamp();
             String steps = getStepsForToday(MainActivity.googleApiClient);
             Log.i("Service", "Account name: " +accountName);
             Log.i("Service", "Timestamp: " +timestamp);
             Log.i("Service", "Steps: " +steps);
-
-            sendJSON(accountName, timestamp, steps);
+        */
+            getStepHistory(MainActivity.googleApiClient);
+            for(DailyStepModel ds : historyStepList) {
+                Log.i("Print historyStepList", "User: " +ds.getUserID()+ " Date: " +ds.getDate()+ " Steps: " +ds.getSteps());
+                sendJSON(ds.getUserID(), ds.getDate(), ds.getSteps());
+            }
+            //sendJSON(accountName, timestamp, steps);
             return null;
         }
         @Override
@@ -110,10 +120,68 @@ public class MyService extends Service implements IAsyncResponse {
         }
     }
 
+    private void getStepHistory(GoogleApiClient googleApiClient) {
+        Calendar cal = Calendar.getInstance();
+        Date now = new Date();
+        now.setHours(23);
+        now.setMinutes(59);
+        cal.setTime(now);
+        long endTime = cal.getTimeInMillis();
+        cal.set(2016, 6, 1, 0, 0, 0);   // Set competione start date (6=july)
+        long startTime = cal.getTimeInMillis();
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        Log.i("Service", "Range Start: " + sdf.format(startTime).toString());
+        Log.i("Service", "Range End: " + sdf.format(endTime).toString());
+
+        DataSource ESTIMATED_STEP_DELTAS = new DataSource.Builder()
+                .setDataType(DataType.TYPE_STEP_COUNT_DELTA)
+                .setType(DataSource.TYPE_DERIVED)
+                .setStreamName("estimated_steps")
+                .setAppPackageName("com.google.android.gms")
+                .build();
+
+        DataReadRequest readRequest = new DataReadRequest.Builder()
+                .aggregate(ESTIMATED_STEP_DELTAS, DataType.TYPE_STEP_COUNT_DELTA)
+                .bucketByTime(1, TimeUnit.DAYS)
+                .setTimeRange(startTime, endTime, TimeUnit.MILLISECONDS)
+                .build();
+        DataReadResult dataReadResult = Fitness.HistoryApi.readData(googleApiClient, readRequest).await(1, TimeUnit.MINUTES);
+        List<Bucket> bucketList = dataReadResult.getBuckets();
+        for(Bucket bucket : bucketList) {
+            fillStepArray(bucket.getDataSet(DataType.TYPE_STEP_COUNT_DELTA));
+        }
+
+    }
+
+    private void fillStepArray(DataSet dataSet) {
+
+        String user = getAccountName();
+        String date = "2000-01-01";
+        String steps = "0";
+        Log.i("Service", "Data returned for Data type: " + dataSet.getDataType().getName());
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        for (DataPoint dp : dataSet.getDataPoints()) {
+            date = sdf.format(dp.getEndTime(TimeUnit.MILLISECONDS)).toString();
+            Log.i("Service", "Data point:");
+            Log.i("Service", "\tType: " + dp.getDataType().getName());
+            Log.i("Service", "\tStart: " + sdf.format(dp.getStartTime(TimeUnit.MILLISECONDS)));
+            Log.i("Service", "\tEnd: " + sdf.format(dp.getEndTime(TimeUnit.MILLISECONDS)));
+            for(Field field : dp.getDataType().getFields()) {
+                Log.i("Service", "\tField: " + field.getName() +
+                        " Value: " + dp.getValue(field));
+                steps = dp.getValue(field).toString();
+            }
+        }
+        DailyStepModel dailyStepModel = new DailyStepModel(user, date, steps);
+        historyStepList.add(dailyStepModel);
+    }
+
     private void sendJSON(String accountName, String timestamp, String steps) {
+        String team = "Team Ost-tavlan";
         PostHandler postHandler = new PostHandler();
         String url = "https://api.stena-health.d4bb62f5.svc.dockerapp.io/healthData?apikeyid=pY_8_iW1HNiZxGvrGLpOZw&secretaccesskey=LJb8siHDrxXzD27p8KCUcw";
-        String json = String.format("[{\"userId\":\"%s\", \"timestamp\": \"%s\", \"steps\":\"%s\", \"team\":\"%s\"}]", accountName, timestamp, steps, 2);
+        String json = String.format("[{\"userId\":\"%s\", \"timestamp\": \"%s\", \"steps\":\"%s\", \"team\":\"%s\"}]", accountName, timestamp, steps, team);
         String response = null;
         // -k, -d -H
         try {
@@ -124,7 +192,8 @@ public class MyService extends Service implements IAsyncResponse {
             System.out.println("json: " + json);
         }
     }
-    public String getStepsForToday(GoogleApiClient googleApiClient) {
+
+    private String getStepsForToday(GoogleApiClient googleApiClient) {
         String steps="";
         DailyTotalResult stepResult = Fitness.HistoryApi.readDailyTotal( googleApiClient, DataType.TYPE_STEP_COUNT_DELTA ).await(1, TimeUnit.MINUTES);
         for (DataPoint dp : stepResult.getTotal().getDataPoints()) {
