@@ -19,7 +19,6 @@ import com.google.android.gms.fitness.data.DataSet;
 import com.google.android.gms.fitness.data.DataSource;
 import com.google.android.gms.fitness.data.DataType;
 import com.google.android.gms.fitness.data.Field;
-import com.google.android.gms.fitness.request.DailyTotalRequest;
 import com.google.android.gms.fitness.request.DataReadRequest;
 import com.google.android.gms.fitness.result.DailyTotalResult;
 import com.google.android.gms.fitness.result.DataReadResult;
@@ -34,16 +33,13 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.text.DateFormat;
 
 /**
  * Created by oscarn on 2016-06-27.
  */
 public class MyService extends Service implements IAsyncResponse {
 
-
     private ArrayList<DailyStepModel> historyStepList;
-
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
@@ -60,9 +56,9 @@ public class MyService extends Service implements IAsyncResponse {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Date date = new Date();
-//      if(date.getHours()>19) {
+        if(date.getHours()>=19) {
             new StartServiceTask().execute();
-//      }
+        }
         stopSelf();
         return super.onStartCommand(intent, flags, startId);
     }
@@ -72,17 +68,8 @@ public class MyService extends Service implements IAsyncResponse {
         Log.i("Service", "Service is stopped");
         AlarmManager alarm = (AlarmManager)getSystemService(ALARM_SERVICE);
         alarm.set(
-                // This alarm will wake up the device when System.currentTimeMillis()
-                // equals the second argument value
                 alarm.RTC_WAKEUP,
-                System.currentTimeMillis() + (1000 * 15), // One hour from now
-                // PendingIntent.getService creates an Intent that will start a service
-                // when it is called. The first argument is the Context that will be used
-                // when delivering this intent. Using this has worked for me. The second
-                // argument is a request code. You can use this code to cancel the
-                // pending intent if you need to. Third is the intent you want to
-                // trigger. In this case I want to create an intent that will start my
-                // service. Lastly you can optionally pass flags. (1000*60*60)
+                System.currentTimeMillis() + (1000 * 60 * 30),
                 PendingIntent.getService(this, 0, new Intent(this, MyService.class), 0)
         );
         super.onDestroy();
@@ -98,20 +85,11 @@ public class MyService extends Service implements IAsyncResponse {
         protected void onPreExecute() {        }
         protected Void doInBackground(Void... params) {
             MainActivity.googleApiClient.connect();
-        /*
-            String accountName = getAccountName();
-            String timestamp = getTimestamp();
-            String steps = getStepsForToday(MainActivity.googleApiClient);
-            Log.i("Service", "Account name: " +accountName);
-            Log.i("Service", "Timestamp: " +timestamp);
-            Log.i("Service", "Steps: " +steps);
-        */
             getStepHistory(MainActivity.googleApiClient);
             for(DailyStepModel ds : historyStepList) {
                 Log.i("Print historyStepList", "User: " +ds.getUserID()+ " Date: " +ds.getDate()+ " Steps: " +ds.getSteps());
                 sendJSON(ds.getUserID(), ds.getDate(), ds.getSteps());
             }
-            //sendJSON(accountName, timestamp, steps);
             return null;
         }
         @Override
@@ -151,11 +129,9 @@ public class MyService extends Service implements IAsyncResponse {
         for(Bucket bucket : bucketList) {
             fillStepArray(bucket.getDataSet(DataType.TYPE_STEP_COUNT_DELTA));
         }
-
     }
 
     private void fillStepArray(DataSet dataSet) {
-
         String user = getAccountName();
         String date = "2000-01-01";
         String steps = "0";
@@ -194,7 +170,7 @@ public class MyService extends Service implements IAsyncResponse {
     }
 
     private String getStepsForToday(GoogleApiClient googleApiClient) {
-        String steps="";
+        String steps="0";
         DailyTotalResult stepResult = Fitness.HistoryApi.readDailyTotal( googleApiClient, DataType.TYPE_STEP_COUNT_DELTA ).await(1, TimeUnit.MINUTES);
         for (DataPoint dp : stepResult.getTotal().getDataPoints()) {
             steps = dp.getValue(Field.FIELD_STEPS).toString();

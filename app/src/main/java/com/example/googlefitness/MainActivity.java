@@ -1,10 +1,6 @@
 package com.example.googlefitness;
 
-import android.accounts.Account;
-import android.accounts.AccountManager;
-import android.content.Context;
 import android.content.Intent;
-import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,19 +12,14 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.fitness.Fitness;
 
-
-
 public class MainActivity extends FragmentActivity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener{
 
     public static GoogleApiClient googleApiClient;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
         googleApiClient = new GoogleApiClient.Builder(this)
                 .addApi(Fitness.HISTORY_API)
                 .addScope(new Scope(Scopes.FITNESS_ACTIVITY_READ_WRITE))
@@ -37,25 +28,6 @@ public class MainActivity extends FragmentActivity implements
                 .build();
         googleApiClient.disconnect();
         startService(new Intent(this, MyService.class));
-
-        String accountName = getAccountName();
-        Log.i("MainActivity", "Account name: " +accountName);
-
-    }
-
-    private String getAccountName() {
-
-        String accountName = null;
-
-        AccountManager manager = (AccountManager) getSystemService(ACCOUNT_SERVICE);
-        Account[] list = manager.getAccounts();
-        for (Account account : list) {
-            if (account.type.equalsIgnoreCase("com.google")) {
-                accountName = account.name;
-                break;
-            }
-        }
-        return accountName;
     }
 
     @Override

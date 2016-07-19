@@ -48,7 +48,6 @@ public class PublishToApiTask extends AsyncTask<Void, Void, JSONObject> {
         return conn;
     }
 
-
     @Override
     protected JSONObject doInBackground(Void... params) {
         HttpURLConnection urlConnection = null;
@@ -85,7 +84,6 @@ public class PublishToApiTask extends AsyncTask<Void, Void, JSONObject> {
         }
         return null;
     }
-
 
     @Override
     protected void onPostExecute(JSONObject result) {
