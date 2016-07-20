@@ -8,8 +8,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:weightSum="1"
-    android:id="@+id/backgroundID">
+    android:id="@+id/backgroundID"
+    android:gravity="center_vertical|center_horizontal">
 
 
+    <ImageView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/message"
+        android:layout_weight="0.03" />
 
 </LinearLayout>

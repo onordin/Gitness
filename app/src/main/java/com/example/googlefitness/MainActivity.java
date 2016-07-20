@@ -5,6 +5,9 @@ import android.support.annotation.NonNull;
 import android.os.Bundle;
 import android.util.Log;
 import android.support.v4.app.FragmentActivity;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.Scopes;
@@ -16,10 +19,12 @@ public class MainActivity extends FragmentActivity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener{
 
+    public boolean pressed = false;
     public static GoogleApiClient googleApiClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         googleApiClient = new GoogleApiClient.Builder(this)
                 .addApi(Fitness.HISTORY_API)
                 .addScope(new Scope(Scopes.FITNESS_ACTIVITY_READ_WRITE))
@@ -29,6 +34,7 @@ public class MainActivity extends FragmentActivity implements
         googleApiClient.disconnect();
         startService(new Intent(this, MyService.class));
     }
+
 
     @Override
     public void onConnected(@NonNull Bundle bundle) {
@@ -44,4 +50,6 @@ public class MainActivity extends FragmentActivity implements
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
         Log.e("HistoryAPI", "onConnectionFailed");
     }
+
+
 }

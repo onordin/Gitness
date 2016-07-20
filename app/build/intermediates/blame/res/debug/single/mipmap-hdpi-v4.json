@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\stena_fitness_logo.png",
+        "source": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\src\\main\\res\\mipmap-hdpi\\stena_fitness_logo.png"
+    },
+    {
         "merged": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
