@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 
 /**
- * Created by oscarn on 2016-06-27.
+ * Created by Oscar Nordin (onordin) on 2016-06-27.
  */
 public class AutoStart extends BroadcastReceiver {
     @Override

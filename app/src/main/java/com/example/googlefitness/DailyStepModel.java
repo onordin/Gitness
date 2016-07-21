@@ -1,7 +1,7 @@
 package com.example.googlefitness;
 
 /**
- * Created by oscarn on 2016-07-08.
+ * Created by Oscar Nordin (onordin) on 2016-07-08.
  */
 public class DailyStepModel {
 

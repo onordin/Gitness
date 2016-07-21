@@ -36,7 +36,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by oscarn on 2016-06-27.
+ * Created by Oscar Nordin (onordin) on 2016-06-27.
  */
 public class MyService extends Service implements IAsyncResponse {
 
@@ -106,7 +106,7 @@ public class MyService extends Service implements IAsyncResponse {
         now.setMinutes(59);
         cal.setTime(now);
         long endTime = cal.getTimeInMillis();
-        cal.set(2016, 6, 1, 0, 0, 0);   // Set competione start date (6=july)
+        cal.set(2016, 6, 1, 0, 0, 0);   // Set competition start date (6=july)
         long startTime = cal.getTimeInMillis();
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");

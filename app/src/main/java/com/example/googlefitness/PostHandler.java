@@ -22,7 +22,7 @@ import okhttp3.Response;
 import okhttp3.TlsVersion;
 
 /**
- * Created by oscarn on 2016-06-28.
+ * Created by Oscar Nordin (onordin) on 2016-06-28.
  */
 public class PostHandler {
 

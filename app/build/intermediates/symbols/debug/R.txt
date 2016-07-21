@@ -553,14 +553,13 @@ int drawable common_plus_signin_btn_text_light_disabled 0x7f020072
 int drawable common_plus_signin_btn_text_light_focused 0x7f020073
 int drawable common_plus_signin_btn_text_light_normal 0x7f020074
 int drawable common_plus_signin_btn_text_light_pressed 0x7f020075
-int drawable easterbunny 0x7f020076
-int drawable message 0x7f020077
-int drawable notification_template_icon_bg 0x7f02007d
+int drawable message 0x7f020076
+int drawable message2 0x7f020077
+int drawable notification_template_icon_bg 0x7f02007c
 int drawable places_ic_clear 0x7f020078
 int drawable places_ic_search 0x7f020079
 int drawable powered_by_google_dark 0x7f02007a
 int drawable powered_by_google_light 0x7f02007b
-int drawable trollface 0x7f02007c
 int id action0 0x7f0c005d
 int id action_bar 0x7f0c004c
 int id action_bar_activity_content 0x7f0c0000

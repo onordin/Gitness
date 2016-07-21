@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/message"
+        android:src="@drawable/message2"
         android:layout_weight="0.03" />
 
 </LinearLayout>

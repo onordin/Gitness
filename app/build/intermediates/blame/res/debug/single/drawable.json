@@ -104,10 +104,6 @@
         "source": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\easterbunny.jpg",
-        "source": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\src\\main\\res\\drawable\\easterbunny.jpg"
-    },
-    {
         "merged": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
         "source": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
@@ -144,11 +140,11 @@
         "source": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\trollface.jpg",
-        "source": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\src\\main\\res\\drawable\\trollface.jpg"
-    },
-    {
         "merged": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\message2.png",
+        "source": "C:\\Users\\oscarn\\Documents\\Gitness\\app\\src\\main\\res\\drawable\\message2.png"
     }
 ]

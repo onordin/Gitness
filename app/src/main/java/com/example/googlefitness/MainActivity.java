@@ -5,9 +5,6 @@ import android.support.annotation.NonNull;
 import android.os.Bundle;
 import android.util.Log;
 import android.support.v4.app.FragmentActivity;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.Scopes;
@@ -15,6 +12,16 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.fitness.Fitness;
 
+
+/**
+ * The Stena Fitness application is a service app that
+ * collects steps from the user's Google Fit account through
+ * Google Fit API and sends it as a JSON object to a specified API.
+ *
+ * @author  Oscar Nordin
+ * @version 1.0
+ * @since   2016-07-21
+ */
 public class MainActivity extends FragmentActivity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener{
@@ -35,7 +42,6 @@ public class MainActivity extends FragmentActivity implements
         startService(new Intent(this, MyService.class));
     }
 
-
     @Override
     public void onConnected(@NonNull Bundle bundle) {
         Log.e("HistoryAPI", "onConnected");
@@ -47,9 +53,6 @@ public class MainActivity extends FragmentActivity implements
     }
 
     @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-        Log.e("HistoryAPI", "onConnectionFailed");
-    }
-
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) { Log.e("HistoryAPI", "onConnectionFailed"); }
 
 }

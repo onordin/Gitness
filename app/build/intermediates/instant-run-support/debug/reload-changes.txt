@@ -1,4 +1,5 @@
 CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\google\android\gms\base\R$drawable$override.class
+CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\googlefitness\MainActivity$override.class
 CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\googlefitness\R$drawable$override.class
 CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\google\android\gms\maps\R$drawable$override.class
 CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\google\android\gms\fitness\R$drawable$override.class
@@ -13,5 +14,6 @@ CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\ins
 CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\googlefitness\R$mipmap$override.class
 CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\googlefitness\R$integer$override.class
 CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\google\android\gms\R$drawable$override.class
+CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\googlefitness\MyService$override.class
 CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\googlefitness\R$styleable$override.class
 CHANGED,C:\Users\oscarn\Documents\Gitness\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\google\android\gms\appindexing\R$drawable$override.class
