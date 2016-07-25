@@ -157,7 +157,7 @@ public class MyService extends Service implements IAsyncResponse {
     private void sendJSON(String accountName, String timestamp, String steps) {
         String team = "Team Ost-tavlan";
         PostHandler postHandler = new PostHandler();
-        String url = "https://api.stena-health.d4bb62f5.svc.dockerapp.io/healthData?apikeyid=pY_8_iW1HNiZxGvrGLpOZw&secretaccesskey=LJb8siHDrxXzD27p8KCUcw";
+        String url = "Request API URL from onordin";
         String json = String.format("[{\"userId\":\"%s\", \"timestamp\": \"%s\", \"steps\":\"%s\", \"team\":\"%s\"}]", accountName, timestamp, steps, team);
         String response = null;
         // -k, -d -H
